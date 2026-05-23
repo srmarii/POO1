@@ -1,3 +1,5 @@
+package exercicio12;
+
 class Conta {
     String titular;
     double saldo;

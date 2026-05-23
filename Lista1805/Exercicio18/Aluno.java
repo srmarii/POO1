@@ -1,3 +1,5 @@
+package exercicio18;
+
 public class Aluno extends Pessoa {
     private int matricula;
     private double nota1;
@@ -26,6 +28,4 @@ public class Aluno extends Pessoa {
             System.out.println("Situação: Reprovado");
         }
     }
-}public class Aluno {
-
 }

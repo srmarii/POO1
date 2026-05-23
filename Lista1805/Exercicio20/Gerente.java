@@ -1,3 +1,5 @@
+package exercicio20;
+
 public class Gerente extends Funcionario {
 
     private double bonus;

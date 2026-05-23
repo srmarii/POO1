@@ -1,3 +1,5 @@
+package exercicio17;
+
 class Vendedor extends Funcionario {
     double vendasMes;
     double comissao;

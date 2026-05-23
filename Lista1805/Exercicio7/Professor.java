@@ -1,10 +1,13 @@
+package exercicio7;
+
 class Professor extends Pessoa {
     String disciplina;
     double salario;
     int cargaHoraria;
+    public double salarioMensal;
 
     void apresentar() {
-        System.out.println("\nOlá, meu nome é " + nome + ", tenho " + idade + " anos e leciono " + disciplina + ".");
+        System.out.println("\nNome: " + nome + ", idade: " + idade + ", disciplina: " + disciplina);
     }
 
     double calcularSalarioAnual() {

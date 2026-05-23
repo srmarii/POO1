@@ -1,3 +1,5 @@
+package exercicio16;
+
 class Pessoa {
     String nome;
     int idade;

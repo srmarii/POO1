@@ -1,3 +1,5 @@
+package exercicio8;
+
 class Animal {
     String nome;
     int idade;

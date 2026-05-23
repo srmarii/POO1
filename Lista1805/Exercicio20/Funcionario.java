@@ -1,3 +1,5 @@
+package exercicio20;
+
 public class Funcionario {
 
     protected String nome;

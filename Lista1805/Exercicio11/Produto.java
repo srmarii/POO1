@@ -1,3 +1,5 @@
+package exercicio11;
+
 class Produto {
     String nome;
     double preco;

@@ -1,3 +1,5 @@
+package exercicio21;
+
 public class Veiculo {
 
     protected String marca;

@@ -1,4 +1,4 @@
-package exercicio13;
+package exercicio4;
 
 import java.util.Scanner;
 
@@ -18,13 +18,7 @@ public class Main {
         System.out.print("Digite a matrícula: ");
         aluno.matricula = sc.nextLine();
 
-        System.out.print("Digite a nota 1: ");
-        aluno.nota1 = sc.nextDouble();
-
-        System.out.print("Digite a nota 2: ");
-        aluno.nota2 = sc.nextDouble();
-
-        aluno.mostrarSituacao();
+        aluno.apresentar();
 
         sc.close();
     }

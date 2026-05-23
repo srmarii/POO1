@@ -1,3 +1,5 @@
+package exercicio20;
+
 public class Vendedor extends Funcionario {
 
     private double valorVendas;

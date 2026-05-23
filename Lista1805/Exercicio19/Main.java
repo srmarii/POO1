@@ -1,3 +1,5 @@
+package exercicio19;
+
 import java.util.Scanner;
 
 public class Main {

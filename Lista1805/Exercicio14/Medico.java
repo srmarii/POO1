@@ -1,3 +1,5 @@
+package exercicio14;
+
 class Medico extends Pessoa {
     String especialidade;
     double salario;

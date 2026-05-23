@@ -1,12 +1,14 @@
+package exercicio10;
+
 class Gerente extends Funcionario {
     String setor;
     double bonus;
 
-    void apresentar() {
+    public void apresentar() {
         System.out.println("\nGerente: " + nome + " - Setor: " + setor + " - Salário base: R$ " + salario);
     }
 
-    double calcularSalarioFinal() {
+    public double calcularSalarioFinal() {
         return salario + bonus;
     }
 }

@@ -1,3 +1,5 @@
+package exercicio21;
+
 public class Moto extends Veiculo {
 
     private int cilindradas;

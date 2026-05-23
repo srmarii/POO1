@@ -1,3 +1,5 @@
+package exercicio16;
+
 class AlunoAcademia extends Pessoa {
     double peso;
     double altura;

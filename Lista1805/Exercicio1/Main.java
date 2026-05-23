@@ -1,4 +1,4 @@
-package exercicio13;
+package exercicio1;
 
 import java.util.Scanner;
 
@@ -11,20 +11,16 @@ public class Main {
         System.out.print("Digite o nome do aluno: ");
         aluno.nome = sc.nextLine();
 
-        System.out.print("Digite a idade: ");
-        aluno.idade = sc.nextInt();
-        sc.nextLine();
-
-        System.out.print("Digite a matrícula: ");
-        aluno.matricula = sc.nextLine();
-
-        System.out.print("Digite a nota 1: ");
+        System.out.print("Digite a primeira nota: ");
         aluno.nota1 = sc.nextDouble();
 
-        System.out.print("Digite a nota 2: ");
+        System.out.print("Digite a segunda nota: ");
         aluno.nota2 = sc.nextDouble();
 
-        aluno.mostrarSituacao();
+        double media = aluno.calcularMedia();
+
+        System.out.println("\nNome do aluno: " + aluno.nome);
+        System.out.println("Média final: " + media);
 
         sc.close();
     }

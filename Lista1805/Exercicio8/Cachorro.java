@@ -1,3 +1,5 @@
+package exercicio8;
+
 class Cachorro extends Animal {
     String raca;
     double peso;

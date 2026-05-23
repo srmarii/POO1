@@ -1,3 +1,5 @@
+package exercicio18;
+
 public class Professor extends Pessoa {
     private String disciplina;
     private double salario;

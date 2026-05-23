@@ -1,3 +1,5 @@
+package exercicio12;
+
 class ContaCorrente extends Conta {
     double limite;
     String agencia;

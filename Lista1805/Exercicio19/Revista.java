@@ -1,3 +1,5 @@
+package exercicio19;
+
 public class Revista extends Item {
 
     private int edicao;

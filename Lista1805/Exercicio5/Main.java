@@ -1,4 +1,4 @@
-package exercicio7;
+package exercicio5;
 
 import java.util.Scanner;
 
@@ -21,13 +21,9 @@ public class Main {
         System.out.print("Digite o salário mensal: ");
         professor.salario = sc.nextDouble();
 
-        System.out.print("Digite a carga horária: ");
-        professor.cargaHoraria = sc.nextInt();
-
         professor.apresentar();
 
         double salarioAnual = professor.calcularSalarioAnual();
-        System.out.println("Carga horária: " + professor.cargaHoraria + "h");
         System.out.println("Salário anual: R$ " + salarioAnual);
 
         sc.close();
