@@ -12,9 +12,10 @@ public class Main {
             System.out.println("3 - Listar clientes");
             System.out.println("4 - Listar pacotes de um cliente");
             System.out.println("5 - Sair");
-            System.out.print("Opcao: ");
+            System.out.print("Opção: ");
             
-            opcao = Integer.parseInt(scanner.nextLine());
+            opcao = scanner.nextInt();
+            scanner.nextLine();
 
             if (opcao == 1) {
                 sistema.cadastrarCliente();

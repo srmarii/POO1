@@ -11,12 +11,15 @@ public class SistemaAgencia {
     }
 
     public void cadastrarCliente() {
-        System.out.print("Nome: ");
+        System.out.print("\nNome: ");
         String nome = scanner.nextLine();
+
         System.out.print("CPF: ");
         String cpf = scanner.nextLine();
+        
         System.out.print("Idade: ");
-        int idade = Integer.parseInt(scanner.nextLine());
+        int idade = scanner.nextInt();
+
         System.out.print("Telefone: ");
         String telefone = scanner.nextLine();
 
@@ -30,7 +33,7 @@ public class SistemaAgencia {
         String dadosCep = cepService.consultarCep(cep);
         System.out.println(dadosCep);
 
-        System.out.print("Endereco: ");
+        System.out.print("\nRua: ");
         cliente.setEndereco(scanner.nextLine());
         System.out.print("Cidade: ");
         cliente.setCidade(scanner.nextLine());
@@ -38,13 +41,13 @@ public class SistemaAgencia {
         cliente.setEstado(scanner.nextLine());
 
         clientes.add(cliente);
-        System.out.println("Cliente cadastrado.");
+        System.out.println("\nCliente cadastrado.");
     }
 
     public void cadastrarPacote() {
-        System.out.print("CPF do cliente: ");
+        System.out.print("\nCPF do cliente: ");
         String cpf = scanner.nextLine();
-        
+
         Cliente cliente = null;
         for (int i = 0; i < clientes.size(); i++) {
             if (clientes.get(i).getCpf().equals(cpf)) {
@@ -53,16 +56,17 @@ public class SistemaAgencia {
         }
 
         if (cliente == null) {
-            System.out.println("Nao encontrado.");
+            System.out.println("\nNao encontrado.");
             return;
         }
 
-        System.out.print("Destino: ");
+        System.out.print("\nDestino: ");
         String destino = scanner.nextLine();
         System.out.print("Data (dd/MM/yyyy): ");
         String dataInicio = scanner.nextLine();
         System.out.print("Duracao (7, 15 ou 30): ");
-        int duracao = Integer.parseInt(scanner.nextLine());
+        int duracao = scanner.nextInt();
+        scanner.nextLine();
         System.out.print("Internacional (1-Sim, 2-Nao): ");
         boolean intl = scanner.nextLine().equals("1");
 
@@ -73,8 +77,9 @@ public class SistemaAgencia {
         pacote.setTemperatura(temp);
 
         System.out.print("Acompanhantes (max 4): ");
-        int qtd = Integer.parseInt(scanner.nextLine());
-        
+        int qtd = scanner.nextInt();
+        scanner.nextLine();
+
         if (qtd > 4) {
             qtd = 4;
         }
@@ -83,12 +88,13 @@ public class SistemaAgencia {
             System.out.print("Nome: ");
             String n = scanner.nextLine();
             System.out.print("Idade: ");
-            int id = Integer.parseInt(scanner.nextLine());
+            int id = scanner.nextInt();
+            scanner.nextLine();
             pacote.adicionarAcompanhante(new Acompanhante(n, id));
         }
 
         cliente.adicionarPacote(pacote);
-        System.out.println("Pacote salvo.");
+        System.out.println("\nPacote salvo.");
     }
 
     public void listarClientes() {
@@ -99,7 +105,7 @@ public class SistemaAgencia {
     }
 
     public void listarPacotesCliente() {
-        System.out.print("CPF do cliente: ");
+        System.out.print("\nCPF do cliente: ");
         String cpf = scanner.nextLine();
         
         for (int i = 0; i < clientes.size(); i++) {
@@ -108,6 +114,6 @@ public class SistemaAgencia {
                 return;
             }
         }
-        System.out.println("Nao encontrado.");
+        System.out.println("\nNao encontrado.");
     }
 }
