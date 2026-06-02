@@ -1,3 +1,5 @@
+//Grupo: Ana Seibert, Gabriel Pereira e Mariana Ramos
+
 import java.util.Scanner;
 
 public class Main {
@@ -21,11 +23,7 @@ public class Main {
                 sistema.cadastrarCliente();
             } else if (opcao == 2) {
                 sistema.cadastrarPacote();
-            } else if (opcao == 3) {
-                sistema.listarClientes();
-            } else if (opcao == 4) {
-                sistema.listarPacotesCliente();
-            }
+            }    
         } while (opcao != 5);
         
         scanner.close();

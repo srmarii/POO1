@@ -96,24 +96,4 @@ public class SistemaAgencia {
         cliente.adicionarPacote(pacote);
         System.out.println("\nPacote salvo.");
     }
-
-    public void listarClientes() {
-        for (int i = 0; i < clientes.size(); i++) {
-            clientes.get(i).apresentar();
-            System.out.println("-----");
-        }
-    }
-
-    public void listarPacotesCliente() {
-        System.out.print("\nCPF do cliente: ");
-        String cpf = scanner.nextLine();
-        
-        for (int i = 0; i < clientes.size(); i++) {
-            if (clientes.get(i).getCpf().equals(cpf)) {
-                clientes.get(i).listarPacotes();
-                return;
-            }
-        }
-        System.out.println("\nNao encontrado.");
-    }
 }
